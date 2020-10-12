@@ -1,0 +1,69 @@
+    dialog3 = $('$dialog-form3').dialog({
+      autoOpen: true,
+      height: 740,
+      width: 700,
+      modal: true,
+      buttons: {
+        "Find a table": function(){
+          dialog3.dialog("open")
+        },
+        Cancel: function() {
+          // once user verifies social login button, close this dialog and open new one.
+          dialog3.dialog( "close" );
+        }
+      },
+      close: function() {
+        form[ 0 ].reset();
+        allFields.removeClass( "ui-state-error" );
+      }
+    })
+
+
+
+
+
+
+    // dialog2 = $( "#dialog-form2" ).dialog({
+    //   autoOpen: false,
+    //   height: 700,
+    //   width: 1050,
+    //   modal: true,
+    //   buttons: {
+    //     "Find a table": function(){
+    //       dialog2.dialog("open")
+    //     },
+    //     Cancel: function() {
+    //       dialog2.dialog( "close" );
+    //     }
+    //   },
+    //   close: function() {
+    //     form[ 0 ].reset();
+    //     allFields.removeClass( "ui-state-error" );
+    //   }
+    // });
+
+
+
+
+      <!-- dialog form2 -->
+  <!-- <div class="dialog__container" id="dialog-form2" title="">
+    <h1 class="modal__reservations-title">Reservation</h1>
+  
+    <form class="modal__form">
+      <div class="modal__reservations-selectmenu">
+            <select name="guests" id="guests">
+              <optgroup>
+                <option disabled selected>Number of People</option>
+                <option value="1 Person">1 Person</option>
+                <option value="2 People">2 People</option>
+                <option value="3 People">3 People</option>
+                <option value="4 People">4 People</option>
+                <option value="5 People">5 People</option>
+                <option value="6 People">6 People</option>
+                <option value="7 People">7 People</option>
+                <option value="8 People">8+ People</option>
+              </optgroup>              
+            </select>           
+      </div>
+    </form>
+  </div> -->

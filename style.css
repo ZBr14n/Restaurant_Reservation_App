@@ -1,0 +1,201 @@
+/* ms datepicker */
+.ms-DatePicker {
+  width: 25%;
+}
+
+.dialog__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__reservations-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Musketeer";
+}
+
+.modal__form {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+  margin: 0 auto;
+}
+
+.modal__reservations-selectmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#guests {
+  height: 50px;
+  width: 300px;
+}
+
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select#guests {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select#guests:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 0.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+#datepicker {
+  height: 50px;
+  width: 275px;
+  padding-left: 20px;
+  /* text-align: center; */
+}
+
+.time {
+  height: 50px;
+  width: 300px;
+
+  /* text-align: center; */
+}
+
+/* inner form */
+/* .ui-dialog > #dialog-form3 {
+  visibility: hidden;
+} */
+
+.ui-dialog {
+  position: relative;
+}
+
+.ui-dialog > #dialog-form2 {
+  /* background-color: aquamarine; */
+
+  background-image: url("./images/background1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: -25;
+}
+.ui-dialog #dialog-form2 > .modal__reservations-header {
+  background-image: url("./images/background2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 1;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal__form2 {
+  position: relative;
+}
+.modal__reservations-socialLogin {
+  position: absolute;
+  right: 50%;
+  bottom: 300px;
+}
+
+/* .modal__social-login-wrapper {
+  border: 3px solid red;
+} */
+
+/* modal__form3 */
+#dialog-form3 {
+  padding: 20px;
+}
+
+#dialog-form3 > .modal__form3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 100px;
+}
+#dialog-form3 .modal__form3 > label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#dialog-form3 > .modal__form3 > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+#dialog-form3 > .modal__form3 div > input {
+  /* width: 100%; */
+  flex-basis: 100%;
+}
+
+.disclaimer > a {
+  color: blue;
+}
+
+/* dialog-form3 */
+.modal__form3 div::before {
+  padding: 10px;
+}
+.modal__form3 div:nth-of-type(4)::before {
+  content: "\f3c5";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
+.modal__form3 > div:nth-of-type(5)::before {
+  content: "\f017";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
+.modal__form3 > div:nth-of-type(6)::before {
+  content: "\f3c5";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
+
+.modal__form3 > div:nth-of-type(7)::before {
+  content: "\f500";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
+.modal__form3 > div:nth-of-type(8)::before {
+  content: "\f02b";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
+.modal__form3 > div:nth-of-type(9)::before {
+  content: "\f249";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+}
